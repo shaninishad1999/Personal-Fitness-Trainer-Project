@@ -9,9 +9,14 @@
  }
 
  /* header section start */
+
  header {
-     /* background: url(/images/hero-img.png) no-repeat center center/cover; */
+     /* background: url(/images/background.png) no-repeat center center/cover; */
      height: 100vh;
+     /* position: sticky;
+     width: 100%;
+    */
+
  }
 
  .navbar {
@@ -20,6 +25,10 @@
      justify-content: space-around;
      height: 100px;
      background-color: black;
+     width: 100%;
+     position: fixed;
+     z-index: 5;
+
 
  }
 
@@ -28,6 +37,7 @@
      flex-wrap: wrap;
      list-style: none;
      padding-left: 50px;
+
 
 
  }
@@ -93,7 +103,10 @@
  .hero {
      display: flex;
      background: url(/images/background.png) no-repeat center center/cover;
-     height: 87.3vh;
+     height: 100vh;
+     position: absolute;
+     width: 100%;
+
 
 
  }
@@ -103,27 +116,37 @@
      color: white;
      position: relative;
      align-content: center;
-     left: 0px;
      justify-content: center;
-     height: 90vh;
      width: 70%;
+     /* top: 100px; */
+     height: auto;
      left: 140px;
+     z-index: 1;
+
  }
 
  .hero-name h1 {
      font-size: 90px;
      position: relative;
+     margin-top: 50px;
 
  }
 
  .hero-name button {
-     padding: 15px 30px 15px 40px;
-     background-color: tomato;
+     margin-top: 20px;
+     padding: 15px 40px 15px 40px;
+     background-color: rgba(255, 99, 71, 0.864);
      border: none;
      cursor: pointer;
      color: white;
      position: relative;
+     font-size: 17px;
+     border-radius: 25px;
 
+     
+ }
+ .hero-name button:hover{
+    background-color: tomato;
  }
 
  .hero img {
@@ -131,26 +154,22 @@
      position: relative;
      /* left: 450px; */
      width: 300px;
-
-
+     top: 100px;
+     height: 87.2%;
  }
-
-
 
  /* hero section close */
 
 
-
  /* about section start */
  #about {
-     height: 90vh;
+    
+     padding-top: 130px;
      display: flex;
      align-items: center;
      justify-content: space-around;
      padding-left: 140px;
      padding-right: 160px;
-     margin-bottom: 50px;
-
 
  }
 
@@ -170,12 +189,15 @@
      margin-right: 85%;
      align-items: center;
      margin-bottom: 20px;
+     position: relative;
+     z-index: -2;
  }
 
  .award p {
      line-height: 1.5;
      font-size: 17px;
      margin-bottom: 40px;
+     width: 90%;
  }
 
  .award-img {
@@ -190,40 +212,46 @@
  }
 
  .award-img img {
-     max-width: 64px;
+    width: 70px;
  }
 
  .about-me {
-     max-width: 600px;
+     width: 100%;
  }
+
+ 
 
  /* about me section close */
 
 
-
-
-
  /* personal training section start */
+
+
+ #training {
+     padding-top: 150px;
+ }
 
  .personal-training {
      display: grid;
      grid-template-columns: auto auto;
      justify-content: space-between;
-
      padding-left: 140px;
      padding-right: 160px;
      margin-bottom: 100px;
+
  }
 
  .personal-training-heading h1 {
      font-size: 48px;
-     margin-bottom: 30px;
+     margin-bottom: 20px;
  }
 
  .training-paragraph {
      line-height: 1.5;
      font-size: 17px;
      margin-top: 50px;
+     width: 80%;
+
 
  }
 
@@ -285,7 +313,7 @@
 
  /* rates section start */
  #rates {
-     margin-top: 30px;
+     padding-top: 120px;
      height: 120vh;
      padding-left: 160px;
 
@@ -309,8 +337,7 @@
 
  .one {
      background: url(/images/rates.png) no-repeat center center/cover;
-     max-width: 90%;
-
+     max-width: 97%;
      padding-left: 50px;
 
  }
@@ -352,7 +379,7 @@
 
  .two {
      background: url(/images/rate2.png ) no-repeat center center/cover;
-     max-width: 90%;
+     max-width: 97%;
      padding-left: 50px;
  }
 
@@ -391,7 +418,7 @@
 
  .three {
      background: url(/images/rate3.png) no-repeat center center/cover;
-     max-width: 90%;
+     max-width: 97%;
      padding-left: 50px;
  }
 
@@ -466,7 +493,7 @@
  }
 
  #gallary img {
-     max-width: 80%;
+    width: 90%;
      /* changes */
      position: absolute;
      z-index: 1;
@@ -478,11 +505,13 @@
  /* client section start */
 
  #clients {
+     padding-top: 100px;
      display: flex;
      flex-wrap: wrap;
      justify-content: space-around;
      margin-bottom: 30px;
      margin-top: 30px;
+     height: 130vh;
 
  }
 
@@ -510,6 +539,8 @@
 
  .clients-heading p {
      line-height: 1.8;
+     font-weight: 400px;
+     width: 80%;
  }
 
  .clients-container {
@@ -526,7 +557,7 @@
  .image {
      margin: 10px;
      transition: all 3s ease;
-     background-color: rgb(255, 60, 0);
+     background-color: rgba(255, 60, 0, 0.566);
  }
 
  .image:hover {
@@ -540,9 +571,10 @@
 
 
  /* testominals section start */
+
  #testimonals {
      background: url(/images/testominals.png);
-     height: 80vh;
+     height: 85vh;
      color: white;
 
  }
@@ -579,18 +611,15 @@
  /* footer   section start  */
  #contact {
      padding-top: 100px;
-     height: 95vh;
+     height: 90vh;
      background-color: black;
      color: white;
      display: grid;
      grid-template-columns: auto auto auto;
-     gap: 125px;
+     gap: 15px;
      padding-left: 140px;
      padding-right: 140px;
      flex-wrap: wrap;
-
-
-
 
  }
 
@@ -618,15 +647,12 @@
      padding: 10px;
      display: flex;
      flex-wrap: wrap;
+     cursor: pointer;
 
  }
 
  .icons i {
      color: white;
- }
-
- .icons i:hover {
-     color: blue;
  }
 
  .icons {
@@ -697,12 +723,20 @@
  .footer-btn {
      margin-top: 20px;
      font-size: 18px;
-     max-width: 130px;
-     padding: 20px 30px 20px 30px;
+     width: 50%;
+     padding: 15px 50px 15px 50px;
      cursor: pointer;
-     background-color: tomato;
+     background-color: rgba(255, 99, 71, 0.707);
      border: none;
      color: white;
+     border-radius: 25px;
+     font-size: 20px;
+
+ }
+
+ .footer-btn:hover {
+     /* color:tomato ; */
+     background-color: tomato;
  }
 
  /* footer  section start  */
@@ -752,37 +786,6 @@
          text-align: right;
      }
 
-     .navbar ul {
-         flex-direction: column;
-         position: absolute;
-         top: 80px;
-         width: 100%;
-         background-color: white;
-         text-align: left;
-         display: none;
-         z-index: 5;
-
-     }
-
-     .navbar ul li a {
-         text-decoration: none;
-         font-size: 16px;
-         color: black;
-     }
-
-     .navbar ul li {
-
-         padding: 12px;
-         border-bottom: 1px solid rgba(14, 12, 12, 0.184);
-         visibility: transparent;
-
-     }
-
-     .navbar ul li a {
-         color: black;
-         width: 100%;
-     }
-
      #click:checked~.navbar ul {
          display: block;
          color: white;
@@ -800,18 +803,15 @@
      .hero {
          display: flex;
          background: url(/images/hero-img.png) no-repeat left left/cover;
-         height: 90vh;
+         /* height: 90vh;
+         position: relative;
+         width: 100%; */
+         height: 100vh;
+         position: absolute;
+         width: 100%;
 
      }
 
-     /* 
-     .hero-name {
-
-         color: white;
-         position: relative;
-         align-content: center;
-         left: 40px;
-     } */
      .hero-name {
          color: white;
          position: relative;
@@ -819,15 +819,18 @@
          left: 0px;
          justify-content: center;
          height: 90vh;
-         width: 30%;
-         left: 40px;
+         width: 25%;
+         left: 10px;
 
      }
 
-     .hero-name h1 {
-         font-size: 30px;
+     .hero img {
+         display: block;
          position: relative;
+         height: 80%;
      }
+
+
 
      /* hero  mobile header section close */
 
@@ -837,10 +840,8 @@
          display: block;
          align-items: center;
          text-align: left;
-         padding-left: 20px;
-         padding-right: 20px;
-         margin-bottom: 200px;
-         padding-top: 50px;
+         padding: 0px 20px 200px 20px;
+         
 
 
      }
@@ -874,6 +875,9 @@
 
 
      /* personal training  moblie screen start  */
+     #training {
+         padding-top: 0px;
+     }
 
      .personal-training {
          display: grid;
@@ -979,6 +983,7 @@
          display: block;
          text-align: left;
          margin-left: 30px;
+         width: 80%;
      }
 
      .clients-container {
@@ -1063,6 +1068,8 @@
          display: block;
      }
 
+
+
      /* footer contact moblie   section close */
 
      /* footer copyright mobile  section start  */
@@ -1137,6 +1144,8 @@
          display: flex;
          background: url(/images/hero-img.png) no-repeat right right/cover;
          height: 90vh;
+         position: absolute;
+         width: 100%;
 
      }
 
@@ -1152,6 +1161,19 @@
 
      .hero-name h1 {
          font-size: 60px;
+         margin-top: 200px;
+     }
+
+     .hero img {
+         width: 90%;
+         left: -40px;
+
+     }
+
+     .hero img {
+         display: block;
+         position: relative;
+         height: 80%;
      }
 
      /* hero  mobile header section close */
@@ -1159,15 +1181,12 @@
      /*  about mobile screen  start */
 
      #about {
+
          display: block;
          align-items: center;
          text-align: left;
-         padding-left: 20px;
-         padding-right: 20px;
-         margin-bottom: 200px;
-         padding-top: 50px;
-
-
+         padding: 0px 20px 200px 20px;
+         
      }
 
      .award {
@@ -1194,7 +1213,8 @@
      }
 
      .about-me {
-         max-width: 400px;
+         /* max-width: 400px; */
+         height: auto;
 
      }
 
@@ -1206,6 +1226,10 @@
      /* about mobile screen close */
 
      /* personal training  moblie screen start  */
+
+     #training {
+         padding-top: 0px;
+     }
 
      .personal-training {
          display: grid;
@@ -1268,15 +1292,16 @@
 
      /* gallary mobile section start */
      #gallary img {
-         max-width: 100%;
          position: relative;
          z-index: 1;
          text-align: center;
          padding-left: 20px;
+         width: 100%;
      }
 
      .gallary-img {
          padding: 20px;
+         
      }
 
      #gallary {
@@ -1285,11 +1310,15 @@
          padding-left: 20px;
          padding-right: 20px;
          height: auto;
+         
 
      }
 
      /* gallary  mobile section close */
 
+     #clients{
+        height: auto;
+     }
      .clients-heading {
          margin-left: 30px;
          width: auto;
@@ -1319,7 +1348,8 @@
          padding-right: 20px;
      }
 
-
+  
+    
      /* footer  copurights secton  */
      footer {
          display: block;
@@ -1366,3 +1396,129 @@
      }
 
  }
+
+
+
+
+
+/* new seen added */
+
+
+
+
+/* 
+
+
+ @media screen and (max-width:1499px) {
+    .hero {
+        display: flex;
+        background: url(/images/hero-img.png) no-repeat right right/cover;
+        height: 90vh;
+        position: absolute;
+        width: 100%;
+
+    }
+    .hero-name {
+        color: white;
+        position: relative;
+        align-content: center;
+        left: 40px;
+
+    }
+    .hero-name h1 {
+        font-size: 60px;
+        margin-top: 200px;
+    }
+    .hero img {
+        display: block;
+        position: relative;
+        height: 80%;
+    }
+    #about {
+    
+        padding-top: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 140px;
+        padding-right: 160px;
+   
+    }
+    #about {
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 140px;
+        padding-right: 160px;
+   
+   
+   
+    }
+    #rates {
+        margin-top: 30px;
+        
+        padding-left: 20px;
+        padding-right: 0px;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 50px;
+    }
+    #clients{
+        padding-top: 100px;
+        height: auto;
+    }
+
+    .clients-heading {
+        margin-left: 30px;
+        width: auto;
+    }
+    #testimonals {
+        background: url(/images/testominals.png);
+        height: auto;
+        color: white;
+    }
+
+    .testimonals-section {
+        margin-left: 40px;
+
+    }
+    #contact {
+        width: 100%;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+       
+    }
+    footer {
+       height: 100%;
+       height: 75px;
+       height: auto;
+    }
+
+
+    #gallary img {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        padding-left: 20px;
+        width: 100%;
+    }
+
+    .gallary-img {
+        padding: 20px;
+        
+    }
+
+    #gallary {
+        display: block;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: auto;
+        
+
+    }
+   
+
+}  
