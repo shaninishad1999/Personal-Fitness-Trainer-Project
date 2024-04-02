@@ -138,9 +138,8 @@
  }
 
  .hero img {
-     display: block;
      position: relative;
-     width: 300px;
+     /* width: 300px;*/
      top: 100px;
      height: 85.8%;
  }
@@ -763,6 +762,447 @@
 
 
 
+
+ /* new media query  added 1499px */
+
+
+
+
+
+ @media screen and (max-width:1499px) {
+
+     .hero-name {
+         color: white;
+         position: relative;
+         align-content: center;
+         left: 40px;
+
+     }
+
+     .hero-name h1 {
+         font-size: 60px;
+         margin-top: 200px;
+     }
+
+     .hero img {
+        /* position: relative; */
+        /* height: 80%; */
+        /* top: 107px; */
+        /* width: 300px; */
+        /* top: 88px; */
+        position: sticky;
+        /* left: 450px; */
+        /* width: 300px; */
+        top: 88px;
+        /* width: 90%; */
+    }  
+
+
+     #about {
+         padding-top: -0.5px;
+         display: block;
+         align-items: center;
+         text-align: left;
+         padding-left: 20px;
+         padding-right: 0px;
+
+     }
+
+     .award {
+         margin: 20px;
+     }
+
+     .about-img {
+         width: 80%;
+         padding: 20px;
+         margin-left: 50px;
+     }
+
+     #training {
+         padding-top: 30px;
+     }
+
+     .personal-training {
+         margin-left: 0px;
+         padding: 40px;
+     }
+
+
+     #rates {
+
+         padding-left: 20px;
+         padding-right: 0px;
+         width: 100%;
+         height: 100%;
+         margin-bottom: 50px;
+     }
+
+     .training-table {
+         display: block;
+     }
+
+     #clients {
+         padding-top: 100px;
+         height: 100%;
+     }
+
+
+     .clients-heading {
+         margin-left: 30px;
+         width: auto;
+     }
+
+     #testimonals {
+         background: url(/images/testominals.png);
+         height: auto;
+         color: white;
+     }
+
+     .testimonals-section {
+         margin-left: 40px;
+
+     }
+
+     #contact {
+         width: 100%;
+         padding-bottom: 30px;
+         padding-left: 20px;
+         padding-right: 20px;
+
+     }
+
+     footer {
+         height: 100%;
+         height: 75px;
+         height: auto;
+     }
+
+
+     #gallary img {
+         position: relative;
+         z-index: 1;
+         text-align: center;
+         padding-left: 20px;
+         width: 100%;
+     }
+
+     .gallary-img {
+         padding: 20px;
+
+     }
+
+     #gallary {
+         display: block;
+         align-items: center;
+         padding-left: 20px;
+         padding-right: 20px;
+         height: auto;
+
+
+     }
+
+
+ }
+
+
+
+ /* Media Query  mobile view 768px */
+
+ @media screen and (max-width:768px) {
+
+     .navbar label {
+         display: block;
+         text-align: right;
+     }
+
+     .navbar ul {
+         flex-direction: column;
+         position: absolute;
+         top: 80px;
+         width: 100%;
+         background-color: white;
+         text-align: left;
+         display: none;
+         z-index: 5;
+     }
+
+     .navbar ul li a {
+         text-decoration: none;
+         font-size: 16px;
+         color: black;
+     }
+
+     .navbar ul li {
+         padding: 12px;
+         border-bottom: 1px solid rgba(14, 12, 12, 0.184);
+         visibility: transparent;
+     }
+
+     .navbar ul li a {
+         color: black;
+         width: 100%;
+     }
+
+     #click:checked~.navbar ul {
+         display: block;
+     }
+
+
+     /* hero  mobile header section start */
+
+     .hero img {
+         position: sticky;
+         /* left: 450px; */
+         width: 300px;
+         top: 88px;
+         /* width: 90%; */
+
+     }
+
+     .hero-name {
+
+         color: white;
+         position: relative;
+         align-content: center;
+         left: 40px;
+
+     }
+
+     .hero-name h1 {
+         font-size: 60px;
+         margin-top: 200px;
+     }
+
+
+
+     /* hero  mobile header section close */
+
+     /*  about mobile screen  start */
+
+     #about {
+         padding-top: 0px;
+         display: block;
+         align-items: center;
+         text-align: left;
+         padding-left: 20px;
+         padding-right: 0px;
+
+     }
+
+     .award {
+         margin-top: 40px;
+     }
+
+     .about-me {
+         width: 100%;
+         text-align: center;
+
+     }
+
+     .award-img {
+         /* display: flex; */
+         display: grid;
+         grid-template-columns: auto auto auto auto;
+         display: block;
+         margin: 25px;
+
+     }
+
+     .award-img h6 {
+         font-size: 20px;
+
+     }
+
+     .about-me {
+         /* max-width: 400px; */
+         height: auto;
+
+     }
+
+     .about-img {
+         text-align: center;
+
+     }
+
+     /* about mobile screen close */
+
+     /* personal training  moblie screen start  */
+
+     #training {
+         padding-top: 0px;
+     }
+
+     .personal-training {
+         display: grid;
+         grid-template-columns: auto auto;
+         display: block;
+         margin-bottom: 100px;
+         height: auto;
+
+
+     }
+
+     .training-ul-list {
+         padding-top: 40px;
+     }
+
+     /* personal training  mobile section close */
+
+     /*  training moblie section start */
+     .training-table {
+         padding-left: 10px;
+         padding-top: 20px;
+         padding-bottom: 100px;
+
+     }
+
+     /* training mobile secton close */
+
+     /* rates section start */
+
+     #rates {
+         margin-top: 30px;
+         height: 120vh;
+         padding-left: 20px;
+         padding-right: 0px;
+         width: 100%;
+         height: 100%;
+     }
+
+     .container {
+         display: block;
+     }
+
+     .one {
+         margin-bottom: 40px;
+         padding-left: 50px;
+         padding-top: -40px;
+         position: relative;
+     }
+
+     .two {
+         margin-bottom: 40px;
+     }
+
+     .three {
+         margin-bottom: 40px;
+     }
+
+     /* rates section close */
+
+     /* gallary mobile section start */
+     #gallary img {
+         position: relative;
+         z-index: 1;
+         text-align: center;
+         padding-left: 20px;
+         width: 100%;
+     }
+
+     .gallary-img {
+         padding: 20px;
+
+     }
+
+     #gallary {
+         display: block;
+         align-items: center;
+         padding-left: 20px;
+         padding-right: 20px;
+         height: auto;
+
+     }
+
+     /* gallary  mobile section close */
+
+     #clients {
+         height: auto;
+     }
+
+     .clients-heading {
+         margin-left: 30px;
+         width: auto;
+     }
+
+     /* testimonals section */
+
+     #testimonals {
+         background: url(/images/testominals.png);
+         height: auto;
+         color: white;
+     }
+
+     .testimonals-section {
+         margin-left: 40px;
+
+     }
+
+     /* footer contact section  */
+
+     #contact {
+         display: block;
+         height: auto;
+         width: 100%;
+         padding-bottom: 30px;
+         padding-left: 20px;
+         padding-right: 20px;
+     }
+
+     /* footer  copurights secton  */
+     footer {
+         display: block;
+     }
+
+     .left-footer p {
+         margin-left: 20px;
+         text-align: center;
+     }
+
+     .right-footer {
+         text-align: center;
+         padding-right: 20px;
+         margin-left: 20px;
+     }
+
+     .follow-icons {
+         margin: 10px;
+         padding: 10px;
+         display: flex;
+         flex-wrap: wrap;
+
+     }
+
+     .icons i {
+         color: white;
+     }
+
+     .icons i:hover {
+         color: blue;
+     }
+
+     .icons {
+         margin: 5px;
+         text-align: left;
+         border: 2px solid white;
+         padding: 10px;
+         border-radius: 50%;
+     }
+
+     .icons:hover {
+         color: tomato;
+         background-color: tomato;
+     }
+
+ }
+
+
+
+
+
+
+
+
+
  /* Media Query  moblie view max-width 500px */
 
 
@@ -999,17 +1439,19 @@
          height: auto;
 
      }
+
      .image {
-        margin: 10px;
-        transition: all 3s ease;
-        background-color: rgba(255, 60, 0, 0.566);
-    }
-   
-    .image:hover {
-        transform: scale(90%, 1);
-        height: 100px;
-        color: green;
-    }
+         margin: 10px;
+         transition: all 3s ease;
+         background-color: rgba(255, 60, 0, 0.566);
+     }
+
+     .image:hover {
+         transform: scale(90%, 1);
+         height: 100px;
+         color: green;
+     }
+
      /* clients section close */
 
 
@@ -1106,421 +1548,3 @@
 
      /* <!-- Footer moble section close --> */
  }
-
-
-
-
- /* Media Query  mobile view 768px */
-
- @media screen and (max-width:768px) {
-
-     .navbar label {
-         display: block;
-         text-align: right;
-     }
-
-     .navbar ul {
-         flex-direction: column;
-         position: absolute;
-         top: 80px;
-         width: 100%;
-         background-color: white;
-         text-align: left;
-         display: none;
-         z-index: 5;
-     }
-
-     .navbar ul li a {
-         text-decoration: none;
-         font-size: 16px;
-         color: black;
-     }
-
-     .navbar ul li {
-         padding: 12px;
-         border-bottom: 1px solid rgba(14, 12, 12, 0.184);
-         visibility: transparent;
-     }
-
-     .navbar ul li a {
-         color: black;
-         width: 100%;
-     }
-
-     #click:checked~.navbar ul {
-         display: block;
-     }
-
-
-     /* hero  mobile header section start */
-
-     .hero img {
-         position: sticky;
-         /* left: 450px; */
-         width: 300px;
-         top: 88px;
-         width: 90%;
-
-     }
-
-     .hero-name {
-
-         color: white;
-         position: relative;
-         align-content: center;
-         left: 40px;
-
-     }
-
-     .hero-name h1 {
-         font-size: 60px;
-         margin-top: 200px;
-     }
-
-
-
-     /* hero  mobile header section close */
-
-     /*  about mobile screen  start */
-
-     #about {
-         padding-top: 0px;
-         display: block;
-         align-items: center;
-         text-align: left;
-         padding-left: 20px;
-         padding-right: 0px;
-
-     }
-
-     .award {
-         margin-top: 40px;
-     }
-
-     .about-me {
-         width: 100%;
-         text-align: center;
-
-     }
-
-     .award-img {
-         /* display: flex; */
-         display: grid;
-         grid-template-columns: auto auto auto auto;
-         display: block;
-         margin: 25px;
-
-     }
-
-     .award-img h6 {
-         font-size: 20px;
-
-     }
-
-     .about-me {
-         /* max-width: 400px; */
-         height: auto;
-
-     }
-
-     .about-img {
-         text-align: center;
-
-     }
-
-     /* about mobile screen close */
-
-     /* personal training  moblie screen start  */
-
-     #training {
-         padding-top: 0px;
-     }
-
-     .personal-training {
-         display: grid;
-         grid-template-columns: auto auto;
-         display: block;
-         margin-bottom: 100px;
-         height: auto;
-        
-         
-     }
-
-     .training-ul-list {
-         padding-top: 40px;
-     }
-
-     /* personal training  mobile section close */
-
-     /*  training moblie section start */
-     .training-table {
-         padding-left: 10px;
-         padding-top: 20px;
-         padding-bottom: 100px;
-
-     }
-
-     /* training mobile secton close */
-
-     /* rates section start */
-
-     #rates {
-         margin-top: 30px;
-         height: 120vh;
-         padding-left: 20px;
-         padding-right: 0px;
-         width: 100%;
-         height: 100%;
-     }
-
-     .container {
-         display: block;
-     }
-
-     .one {
-         margin-bottom: 40px;
-         padding-left: 50px;
-         padding-top: -40px;
-         position: relative;
-     }
-
-     .two {
-         margin-bottom: 40px;
-     }
-
-     .three {
-         margin-bottom: 40px;
-     }
-
-     /* rates section close */
-
-     /* gallary mobile section start */
-     #gallary img {
-         position: relative;
-         z-index: 1;
-         text-align: center;
-         padding-left: 20px;
-         width: 100%;
-     }
-
-     .gallary-img {
-         padding: 20px;
-
-     }
-
-     #gallary {
-         display: block;
-         align-items: center;
-         padding-left: 20px;
-         padding-right: 20px;
-         height: auto;
-
-     }
-
-     /* gallary  mobile section close */
-
-     #clients {
-         height: auto;
-     }
-
-     .clients-heading {
-         margin-left: 30px;
-         width: auto;
-     }
-
-     /* testimonals section */
-
-     #testimonals {
-         background: url(/images/testominals.png);
-         height: auto;
-         color: white;
-     }
-
-     .testimonals-section {
-         margin-left: 40px;
-
-     }
-
-     /* footer contact section  */
-
-     #contact {
-         display: block;
-         height: auto;
-         width: 100%;
-         padding-bottom: 30px;
-         padding-left: 20px;
-         padding-right: 20px;
-     }
-
-     /* footer  copurights secton  */
-     footer {
-         display: block;
-     }
-
-     .left-footer p {
-         margin-left: 20px;
-         text-align: center;
-     }
-
-     .right-footer {
-         text-align: center;
-         padding-right: 20px;
-         margin-left: 20px;
-     }
-
-     .follow-icons {
-         margin: 10px;
-         padding: 10px;
-         display: flex;
-         flex-wrap: wrap;
-
-     }
-
-     .icons i {
-         color: white;
-     }
-
-     .icons i:hover {
-         color: blue;
-     }
-
-     .icons {
-         margin: 5px;
-         text-align: left;
-         border: 2px solid white;
-         padding: 10px;
-         border-radius: 50%;
-     }
-
-     .icons:hover {
-         color: tomato;
-         background-color: tomato;
-     }
-
- }
-
- /* new media query  added 1499px */
-
-
-
-
-
- @media screen and (max-width:1499px) {
-   
-    .hero-name {
-        color: white;
-        position: relative;
-        align-content: center;
-        left: 40px;
-
-    }
-    .hero-name h1 {
-        font-size: 60px;
-        margin-top: 200px;
-    }
-    .hero img {
-        display: block;
-        position: relative;
-        height: 80%;
-        top: 107px;
-    }
-  
-  
-    #about {
-        padding-top: -0.5px;
-        display: block;
-        align-items: center;
-        text-align: left;
-        padding-left: 20px;
-        padding-right: 0px;
-
-    }
-    .award{
-        margin: 20px;
-    }
-   .about-img{
-    width: 80%;
-  padding: 20px;
-  margin-left: 50px;
-   }
-
-   #training{
-    padding-top: 30px;
-   }
-   .personal-training{
-    margin-left: 0px;
-    padding: 40px;
-   }
-
-
-    #rates {
-        
-        padding-left: 20px;
-        padding-right: 0px;
-        width: 100%;
-        height: 100%;
-        margin-bottom: 50px;
-    }
-
-    .training-table{
-        display: block;
-    }
-    #clients{
-        padding-top: 100px;
-        height: 100%;
-    }
-   
-    
-    .clients-heading {
-        margin-left: 30px;
-        width: auto;
-    }
-    #testimonals {
-        background: url(/images/testominals.png);
-        height: auto;
-        color: white;
-    }
-
-    .testimonals-section {
-        margin-left: 40px;
-
-    }
-    #contact {
-        width: 100%;
-        padding-bottom: 30px;
-        padding-left: 20px;
-        padding-right: 20px;
-       
-    }
-    footer {
-       height: 100%;
-       height: 75px;
-       height: auto;
-    }
-
-
-    #gallary img {
-        position: relative;
-        z-index: 1;
-        text-align: center;
-        padding-left: 20px;
-        width: 100%;
-    }
-
-    .gallary-img {
-        padding: 20px;
-        
-    }
-
-    #gallary {
-        display: block;
-        align-items: center;
-        padding-left: 20px;
-        padding-right: 20px;
-        height: auto;
-        
-
-    }
-   
-
-}  
